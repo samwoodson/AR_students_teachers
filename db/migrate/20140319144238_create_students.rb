@@ -12,7 +12,7 @@ class CreateStudents < ActiveRecord::Migration
       t.date :birthday
       t.string :email
       t.string :phone
-      t.belongs_to :teacher
+      t.belongs_to :teacher #**references**
       t.timestamps null: false
     end
   end
